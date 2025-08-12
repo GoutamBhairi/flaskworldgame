@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Celestial Catch</title>
+    <style>
+        body { margin: 0; background: black; overflow: hidden; }
+        canvas { display: block; margin: auto; background: #000; }
+        #score {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            color: white;
+            font-family: Arial, sans-serif;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="score">Score: 0</div>
+    <canvas id="gameCanvas"></canvas>
+    <script src="{{ url_for('static', filename='game.js') }}"></script>
+</body>
+</html>
